@@ -2,7 +2,7 @@
 #include<vector>
 #include<iostream>
 #include <thread>
-
+#include <functional> // Include this for std::function
 using namespace std;
 	using namespace std::chrono_literals;
 
@@ -11,28 +11,32 @@ class TaskScheduler
 {
     public:
 
-        void createTask(){
-            this_thread::sleep_for(1s);
+        void createTask(function<void()> task){
+            this_thread::sleep_for(100ms);
+            task();
         }
-         void RunTask(){
-            this_thread::sleep_for(5s);
+         void RunTask(function<void()> task){
+            this_thread::sleep_for(300ms);
+            task();
         }
-         void completeTask(){
-            this_thread::sleep_for(8s);
+         void completeTask(function<void()> task){
+            this_thread::sleep_for(400ms);
+            task();
         }
 };
 
-TaskScheduler:: createTask(){
-    
-}
 
 int main(){
 
     TaskScheduler ts;
-    auto call1 = [&ts](){
-        ts.createTask(){
-            cout << "TASK HAS BEEN CREATED" << endl;
-        }
-    }
+    ts.createTask([](){
+        cout <<"TASK CREATED" <<endl;
+    });
+    ts.RunTask([](){
+        cout <<"RUN CREATED" <<endl;
+    });
+    ts.completeTask([](){
+        cout <<"COMPLETE CREATED" <<endl;
+    });
 
 }
