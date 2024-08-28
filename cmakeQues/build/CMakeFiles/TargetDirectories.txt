@@ -1,0 +1,4 @@
+/home/einfochips/cpractice/c_practice/cmakeQues/build/CMakeFiles/calc.dir
+/home/einfochips/cpractice/c_practice/cmakeQues/build/CMakeFiles/ccal.dir
+/home/einfochips/cpractice/c_practice/cmakeQues/build/CMakeFiles/edit_cache.dir
+/home/einfochips/cpractice/c_practice/cmakeQues/build/CMakeFiles/rebuild_cache.dir
