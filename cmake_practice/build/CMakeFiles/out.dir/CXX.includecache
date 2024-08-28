@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/devanshi/Downloads/C++_Code/cmake_practice/main.cpp
+mylib/calc.h
+/home/devanshi/Downloads/C++_Code/cmake_practice/mylib/calc.h
+string
+-
+
+/home/devanshi/Downloads/C++_Code/cmake_practice/mylib/calc.h
+string
+-
+iostream
+-
+
