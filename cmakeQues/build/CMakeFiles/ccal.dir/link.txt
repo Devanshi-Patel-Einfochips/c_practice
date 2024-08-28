@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/ccal.dir/main.cpp.o -o ccal  -Wl,-rpath,/home/einfochips/cpractice/c_practice/cmakeQues/build libcalc.so 
