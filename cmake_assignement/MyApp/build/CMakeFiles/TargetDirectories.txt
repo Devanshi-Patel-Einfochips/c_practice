@@ -1,0 +1,9 @@
+/home/devanshi/Downloads/C++_Code/cmake_assignement/MyApp/build/CMakeFiles/rebuild_cache.dir
+/home/devanshi/Downloads/C++_Code/cmake_assignement/MyApp/build/CMakeFiles/edit_cache.dir
+/home/devanshi/Downloads/C++_Code/cmake_assignement/MyApp/build/CMakeFiles/myapp.dir
+/home/devanshi/Downloads/C++_Code/cmake_assignement/MyApp/build/sharedlib/CMakeFiles/rebuild_cache.dir
+/home/devanshi/Downloads/C++_Code/cmake_assignement/MyApp/build/sharedlib/CMakeFiles/edit_cache.dir
+/home/devanshi/Downloads/C++_Code/cmake_assignement/MyApp/build/sharedlib/CMakeFiles/sharedlib.dir
+/home/devanshi/Downloads/C++_Code/cmake_assignement/MyApp/build/staticlib/CMakeFiles/rebuild_cache.dir
+/home/devanshi/Downloads/C++_Code/cmake_assignement/MyApp/build/staticlib/CMakeFiles/edit_cache.dir
+/home/devanshi/Downloads/C++_Code/cmake_assignement/MyApp/build/staticlib/CMakeFiles/staticlib.dir

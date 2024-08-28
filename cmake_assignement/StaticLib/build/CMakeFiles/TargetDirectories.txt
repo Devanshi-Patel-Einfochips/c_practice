@@ -1,0 +1,3 @@
+/home/devanshi/Downloads/C++_Code/cmake_assignement/StaticLib/build/CMakeFiles/rebuild_cache.dir
+/home/devanshi/Downloads/C++_Code/cmake_assignement/StaticLib/build/CMakeFiles/edit_cache.dir
+/home/devanshi/Downloads/C++_Code/cmake_assignement/StaticLib/build/CMakeFiles/staticlib.dir
