@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/myapp.dir/src/main.cpp.o  -o myapp  -Wl,-rpath,/home/devanshi/Downloads/C++_Code/cmake_assignement/MyApp/build/sharedlib:/home/devanshi/Downloads/C++_Code/cmake_assignement/MyApp/build/staticlib sharedlib/libsharedlib.so staticlib/libstaticlib.so 

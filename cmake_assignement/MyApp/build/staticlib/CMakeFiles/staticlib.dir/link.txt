@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC   -shared -Wl,-soname,libstaticlib.so -o libstaticlib.so CMakeFiles/staticlib.dir/src/staticHello.cpp.o 
