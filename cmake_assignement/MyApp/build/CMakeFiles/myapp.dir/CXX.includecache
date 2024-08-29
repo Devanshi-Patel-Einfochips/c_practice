@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/devanshi/Downloads/C++_Code/cmake_assignement/MyApp/src/main.cpp
+iostream
+-
+../../SharedLib/include/SharedHello.h
+/home/devanshi/Downloads/C++_Code/cmake_assignement/SharedLib/include/SharedHello.h
+../../StaticLib/include/staticHello.h
+/home/devanshi/Downloads/C++_Code/cmake_assignement/StaticLib/include/staticHello.h
+
+/home/devanshi/Downloads/C++_Code/cmake_assignement/SharedLib/include/SharedHello.h
+
+/home/devanshi/Downloads/C++_Code/cmake_assignement/StaticLib/include/staticHello.h
+

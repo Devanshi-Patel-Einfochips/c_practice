@@ -1,5 +1,5 @@
 #include<iostream>
-#include "include/staticHello.h"
+#include "../include/staticHello.h"
 using namespace std;
 
 void PrintStaticData(){
