@@ -1,5 +1,5 @@
 #include<iostream>
-#include "include/SharedHello.h"
+#include "../include/SharedHello.h"
 using namespace std;
 
 void PrintSharedData(){

@@ -1,10 +1,10 @@
 #include<iostream>
-#include <SharedHello.h> // Simplified include path
-#include "../staticHello.h"
+#include "../../SharedLib/include/SharedHello.h" // Simplified include path
+#include "../../StaticLib/include/staticHello.h"
 using namespace std;
 
 int main(){
     PrintStaticData();
-    printsharedData();
+    PrintSharedData();
     return 0;
 }
