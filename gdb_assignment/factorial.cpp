@@ -29,3 +29,17 @@ int factorial(int n) {
 	}
 	return f;	
 }
+
+
+
+// gdb b 28
+// gdb condition 1 i > 5
+// gdb r           ====> run
+// gdb info locals   =====> list values of local variables
+
+
+// Find PROCESS ID:
+// ps -aux | grep ./lam
+// pidof ./lam 
+// pgrep ./lam
+// (gdb) attach <PID>
