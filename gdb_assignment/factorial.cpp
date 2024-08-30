@@ -1,7 +1,7 @@
 
 #include<iostream>
 using namespace std;
-
+#include <unistd.h> // for sleep
 int factorial(int n);
 
 int main(void) {
@@ -15,7 +15,7 @@ int main(void) {
         cout << "The factorial of " << n << f << endl;
 
 	// printf("The factorial of %d is %d.\n", n, f);
-
+    sleep(10); // delay for 10 seconds
 	return 0;
 		
 }
@@ -27,6 +27,7 @@ int factorial(int n) {
 		f = f * i;
 		i++;
 	}
+	
 	return f;	
 }
 
