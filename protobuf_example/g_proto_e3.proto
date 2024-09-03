@@ -1,0 +1,17 @@
+syntax ="proto3";
+// use oneof FOR VERSION3
+package citiesData;
+
+message cityData{
+ string stateName = 5;
+
+    oneof example_oneof{
+    string cityname=1;
+    int32 pincode =2;
+    string address = 3;
+    }
+}
+
+message stateData{
+    repeated cityData cities=1;
+}
