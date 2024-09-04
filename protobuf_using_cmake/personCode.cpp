@@ -2,7 +2,7 @@
 #include "personData.pb.h"  // Include the generated header file
 
 int main() {
-persondata::Person person;
+persons::Person person;
     // Set the fields of the Person message
     person.set_id(111);
     person.set_name("dess");

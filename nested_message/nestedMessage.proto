@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package nestedExample;
+
+message Person {
+    int32 id = 1;
+    string name = 2;
+    string email = 3;
+    string phone_number = 4;
+     message Address{
+        string street= 5;
+        string city = 6;
+        int32 zipcode = 7;
+     }
+     repeated Address address=5;
+}

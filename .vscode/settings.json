@@ -50,7 +50,12 @@
     "streambuf": "cpp",
     "typeinfo": "cpp",
     "list": "cpp",
-    "map": "cpp"
+    "map": "cpp",
+    "condition_variable": "cpp",
+    "cstring": "cpp",
+    "set": "cpp",
+    "unordered_set": "cpp",
+    "mutex": "cpp"
   },
   "C_Cpp_Runner.cCompilerPath": "gcc",
   "C_Cpp_Runner.cppCompilerPath": "g++",
