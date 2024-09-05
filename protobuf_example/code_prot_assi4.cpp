@@ -4,17 +4,20 @@
 using namespace std;
 
 void InputAddressData(addressSerialize::Person* person){
-    cout << "Enter Name: ";
-    string name;
-    
-    getline(cin, name);
-person->set_name(name);
-
 
     cout << "Enter id: ";
     int id;
     cin >> id;
     person->set_id(id);
+
+
+    cout << "Enter Name: ";
+    string name;
+            cin.ignore();  // Ignore newline left in the buffer from previous input
+
+    getline(cin, name);
+person->set_name(name);
+
 
     cout << "Enter email: ";
     string email;
@@ -44,12 +47,12 @@ void PrintAddressBook(addressSerialize::AddressBook& add_b)
 {
 
 for(int i=0;i< add_b.people_size();++i){
-    const addressSerialize::Person& p = add_b.people();
+    const addressSerialize::Person& p = add_b.people(i);
 
         cout << "Person " << i+1 << endl;
+    cout << "id: " << p.id() << endl;
 
     cout << "Name: " << p.name() << endl;
-    cout << "id: " << p.id() << endl;
     if(!p.email().empty()){
        cout << "Email: "  << p.email() << endl;
     }

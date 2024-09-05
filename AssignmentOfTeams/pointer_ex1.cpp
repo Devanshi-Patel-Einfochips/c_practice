@@ -1,5 +1,7 @@
 #include <assert.h>
 #include<memory>
+#include<iostream>
+using namespace std;
 ////////////////////////////////////////////////////////////////////////////////
 //
 // Assignment: compile existing program and run using valgrind, and save the
@@ -12,19 +14,19 @@
 class Foo
 {
 public:
-    Foo(int * v) : val(v) {}
+    Foo(unique_ptr<int>& v) : val(v) {}
     int answer()
     {
         return *val;
     }
 private:
-    int *val;
+    unique_ptr<int>& val;
 };
 
 int main()
 {
-    int *i = new int(42);
-    std::unique_ptr<int> i(new int{42});
+    // int *i = new int(42);
+    std::unique_ptr<int> i = make_unique<int>(42);
     Foo f(i);
     assert(f.answer() == 42);
 }

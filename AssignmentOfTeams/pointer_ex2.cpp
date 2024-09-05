@@ -1,6 +1,8 @@
 #include <assert.h>
 #include <vector>
-
+#include<memory>
+#include<iostream>
+using namespace std;
 ////////////////////////////////////////////////////////////////////////////////
 //
 // Assignment: compile existing program and run using valgrind, and save the
@@ -14,23 +16,24 @@
 class Foo
 {
 public:
-    Foo(int * v) : val(v) {}
+    Foo(shared_ptr<int>& v) : val(v) {}
     int answer()
     {
         return *val;
     }
 private:
-    int *val;
+    shared_ptr<int>& val;
 };
 
 int main()
 {
     std::vector<Foo> fs;
     {
-        int *i = new int(42);
+        // int *i = new int(42);
+shared_ptr<int> i = make_shared<int>(42);
         for(int j=0; j<100; j++)
             fs.emplace_back(i);
-        delete i;
+        // delete i;
     }
 
     for(auto f=fs.begin(); f != fs.end(); ++f) {
