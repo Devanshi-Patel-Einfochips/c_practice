@@ -55,7 +55,10 @@
     "cstring": "cpp",
     "set": "cpp",
     "unordered_set": "cpp",
-    "mutex": "cpp"
+    "mutex": "cpp",
+    "future": "cpp",
+    "cinttypes": "cpp",
+    "codecvt": "cpp"
   },
   "C_Cpp_Runner.cCompilerPath": "gcc",
   "C_Cpp_Runner.cppCompilerPath": "g++",
