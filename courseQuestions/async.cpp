@@ -1,27 +1,33 @@
 #include <future>
 #include <iostream>
 #include <thread>
-
+#include <chrono>
+using namespace std;
+using namespace std::chrono_literals;
+// using milliseconds ms;
 int Operation(int count) {
-	using namespace std::chrono_literals;
+	// using namespace std::chrono_literals;
 	int sum{};
 	for (int i = 0; i < count; ++i) {
 		sum += i;
-		std::cout << '.';
+		std::cout << '>';
 		std::this_thread::sleep_for(300ms);//std::chrono::seconds(1) 
 	}
 	return sum;
 }
 int main() {
-	using namespace std::chrono_literals ;
+	// using namespace std::chrono_literals ;
 	std::future<int> result = std::async(std::launch::async, Operation, 10);
-	std::this_thread::sleep_for(1s) ;
+	std::this_thread::sleep_for(800ms) ;
 	std::cout << "main() thread continues execution...\n";
 	if (result.valid()) {
 		auto timepoint = std::chrono::system_clock::now() ;
+		// cout << "timepoint: " << timepoint << endl;
 		timepoint += 1s ; 
 		auto status = result.wait_until(timepoint) ;
 		//auto status = result.wait_for(4s) ;
+			std::cout << "got status\n";
+
 		switch(status) {
 		case std::future_status::deferred:
 			std::cout << "Task is synchronous\n" ;

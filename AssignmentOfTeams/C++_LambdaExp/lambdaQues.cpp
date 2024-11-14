@@ -40,3 +40,18 @@ int main(){
     });
 
 }
+
+
+// class CheckF{
+//     public:
+//         virtual int dataCheck();
+// };
+// int CheckF::dataCheck(){
+//     cout << "in data check" << endl;
+//     return 0;
+// }
+// int main(){
+//     CheckF s;
+//     s.dataCheck();
+//     return 0;
+// }

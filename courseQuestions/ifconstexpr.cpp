@@ -29,7 +29,7 @@ std::string ToString(T value) {
 void CheckMode() {
 	if constexpr (sizeof(void *) == 4) {
 		std::cout << "32-bit\n" ;
-	}else if constexpr (sizeof(void *) == 8) {
+	}else if constexpr (sizeof(void *) != 8) {
 		std::cout << "64-bit\n" ;
 	}else {
 		std::cout << "Unknown mode\n" ;
